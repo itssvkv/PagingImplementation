@@ -110,4 +110,16 @@ dependencies {
     implementation("io.coil-kt:coil-compose:1.3.2")
 
 
+    // Splash API
+    implementation ("androidx.core:core-splashscreen:1.0.1")
+
+    // Pager and Indicators - Accompanist
+    implementation (libs.accompanist.pager)
+    implementation ("com.google.accompanist:accompanist-pager-indicators:0.36.0")
+
+    // DataStore Preferences
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
+
+
+
 }

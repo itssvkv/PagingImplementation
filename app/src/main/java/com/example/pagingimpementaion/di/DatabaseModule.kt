@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.compose.ui.graphics.vector.RootGroupName
 import androidx.room.Room
 import com.example.pagingimpementaion.data.local.UnsplashDatabase
+import com.example.pagingimpementaion.data.local.datastore.DataStoreRepository
 import com.example.pagingimpementaion.utils.Constants.UNSPLASH_DATABASE
 import dagger.Module
 import dagger.Provides
@@ -30,4 +31,10 @@ object DatabaseModule {
             .build()
     }
 
+
+    @Provides
+    @Singleton
+    fun provideDataStoreRepository(
+        @ApplicationContext context: Context
+    ) = DataStoreRepository(context)
 }
